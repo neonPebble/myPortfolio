@@ -6,8 +6,24 @@ import useVisibility from './components/useVisibility'
 export default function Home() {
   // const [someInput, setSomeInput] = useState('')
   // const [someArray, setSomeArray] = useState([])
-  const targetRef = useRef(null)
-  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, targetRef)
+  const myselfRef = useRef(null)
+  const aboutRef = useRef(null)
+  const skillsRef = useRef(null)
+  const projectsRef = useRef(null)
+  const contactRef = useRef(null)
+
+  /* // you should not use hooks inside loops but in ths case it works
+  const allRefs = [myselfRef, aboutRef, skillsRef, projectsRef, contactRef]
+  allRefs.forEach(targetRef => {
+    useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, targetRef)
+  })
+  */
+
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, myselfRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, aboutRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, skillsRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, projectsRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, contactRef)
 
   return (
     <div className="min-h-[100vh]  text-primary-200 ">
@@ -43,9 +59,9 @@ export default function Home() {
         </nav>
       </div>
       <div className=" text-primary-200">
-        <section id="Myself" className="bg-[#114e9e] ">
+        <section id="Myself" className="bg-[#114e9e] " ref={myselfRef}>
           <h1>
-            Hi I'm <span className="text-[#05fdd4]">Akash Parhi</span>
+            Hi I&apos;m <span className="text-[#05fdd4]">Akash Parhi</span>
           </h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
@@ -55,7 +71,7 @@ export default function Home() {
           </p>
         </section>
         <div className="spacer layer3" />
-        <section className=" bg-[#022949]" id="About">
+        <section className=" bg-[#022949]" id="About" ref={aboutRef}>
           <h1>Abot Me</h1>
           <p>
             Eveniet, cum. Suscipit vitae modi maxime nemo cupiditate corporis
@@ -65,7 +81,7 @@ export default function Home() {
           </p>
         </section>
         <div className="spacer layer4" />
-        <section className=" bg-[#610a94]" id="Skills" ref={targetRef}>
+        <section className=" bg-[#610a94]" id="Skills" ref={skillsRef}>
           <h1>My Skills</h1>
           <p>
             Maiores assumenda tempora molestiae sapiente ut consequatur ad harum
@@ -75,7 +91,7 @@ export default function Home() {
           </p>
         </section>
         <div className="spacer layer1" />
-        <section className=" bg-[#a10a50] red" id="Projects">
+        <section className=" bg-[#a10a50] red" id="Projects" ref={projectsRef}>
           <h1>My Projects</h1>
           <p>
             At fugit quidem quo? At maiores itaque, similique ad iste vel
@@ -85,7 +101,7 @@ export default function Home() {
           </p>
         </section>
         <div className="spacer layer2" />
-        <section className=" bg-[#730761]" id="Contact">
+        <section className=" bg-[#730761]" id="Contact" ref={contactRef}>
           <h1>Contact Me</h1>
           <p>
             Aliquid numquam harum quo quam culpa illum totam ullam nisi

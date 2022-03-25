@@ -6,18 +6,23 @@ export default function useVisibility(options, targetRef) {
   const optionsM = useMemo(() => options, [options])
 
   useEffect(() => {
-    console.log('atleast the hook works')
     const target = targetRef.current
-    console.log(target)
-    console.log(target.classList)
-    const callBackFunc = (entries, observer) => {
-      console.log('it should be working')
+    console.log('ran outer useEffect')
+
+    const queryString = `a[href="#${targetRef.current.id}"]`
+    const allNavLinks = document.querySelectorAll('nav a')
+    const navLink = document.querySelector(queryString)
+
+    const callBackFunc = entries => {
       const [entry] = entries
       // setIsVisible(entry.isIntersecting)
       if (entry.isIntersecting) {
-        console.log('now it should be REALLY WORKING')
         target.classList.add('show')
-        observer.unobserve(target)
+        allNavLinks.forEach(oneLink => {
+          oneLink.classList.remove('onSection')
+        })
+        navLink.classList.add('onSection')
+        // observer.unobserve(target)
       }
     }
 

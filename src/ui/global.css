@@ -117,21 +117,25 @@ nav li.active {
   color: #c408fd;
 }
 
-#Skills p {
+section p {
   opacity: 0;
   transform: translate(10px, 10px);
   transition: all 500ms ease-in;
 }
-#Skills h1 {
+section h1 {
   opacity: 0;
   transform: translate(20px, 20px);
   transition: all 500ms ease-in;
 }
 
-#Skills.show h1,
-#Skills.show p {
+.show h1,
+.show p {
   opacity: 1;
   transform: translate(0);
+}
+
+a.onSection {
+  color: #2c6fec;
 }
 @media (max-width: 720px) {
 }

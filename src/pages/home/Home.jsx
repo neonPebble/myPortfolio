@@ -1,6 +1,10 @@
 import React, { useRef } from 'react'
 import useVisibility from './components/useVisibility'
 import SkillCard from './components/SkillCard'
+import ProjectCard from './components/ProjectCard'
+import ProjectCard2 from './components/ProjectCard2'
+import ProjectCard3 from './components/ProjectCard3'
+
 // import Somecomponent from './components/Somecomponent'
 
 export default function Home() {
@@ -21,8 +25,8 @@ export default function Home() {
 
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, myselfRef)
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, aboutRef)
-  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, skillsRef)
-  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, projectsRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.2 }, skillsRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.2 }, projectsRef)
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, contactRef)
 
   return (
@@ -93,20 +97,20 @@ export default function Home() {
             nesciunt veritatis odit alias libero, sunt neque reprehenderit
             ratione quaerat repellendus! Explicabo.
           </p>
-          <div className="flex items-center justify-center cardContainer py-[40px] gap-10 flex-wrap py-10">
+          <div className="flex items-center justify-center cardContainer py-[40px] gap-10 flex-wrap">
             <SkillCard sType="front" /> <SkillCard sType="back" />
             <SkillCard sType="Tools" />
           </div>
         </section>
         <div className="spacer layer1" />
         <section className=" bg-[#a10a50] red" id="Projects" ref={projectsRef}>
-          <h1>My Projects</h1>
-          <p>
-            At fugit quidem quo? At maiores itaque, similique ad iste vel
-            consequatur aliquam eveniet amet officia, veritatis veniam provident
-            esse fugit laudantium labore praesentium debitis rem sed consectetur
-            nesciunt aliquid!
-          </p>
+          <h1 className="pb-5 ">My Projects</h1>
+
+          <div className=" projectCardContainer">
+            <ProjectCard />
+            <ProjectCard2 />
+            <ProjectCard3 />
+          </div>
         </section>
         <div className="spacer layer2" />
         <section className=" bg-[#730761]" id="Contact" ref={contactRef}>

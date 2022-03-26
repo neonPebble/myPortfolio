@@ -10,6 +10,7 @@ export default function useVisibility(options, targetRef) {
     console.log('ran outer useEffect')
 
     const queryString = `a[href="#${targetRef.current.id}"]`
+
     const allNavLinks = document.querySelectorAll('nav a')
     const navLink = document.querySelector(queryString)
 

@@ -61,7 +61,7 @@ section h1 {
   font-weight: 400;
 }
 
-section p {
+section > p {
   font: 1.25rem sans-serif;
 }
 
@@ -73,6 +73,9 @@ section {
   min-height: 400px;
   padding: 100px 20vw; /* maybe 100 */
 }
+
+/*#Skills {
+}*/
 
 .flip {
   transform: rotatez(180deg);
@@ -117,25 +120,52 @@ nav li.active {
   color: #c408fd;
 }
 
-section p {
+section > p {
   opacity: 0;
-  transform: translate(10px, 10px);
+  transform: translate(80px, 80px);
   transition: all 500ms ease-in;
 }
-section h1 {
+section > h1 {
   opacity: 0;
-  transform: translate(20px, 20px);
-  transition: all 500ms ease-in;
+  transform: translate(60px, 60px);
+  transition: all 700ms ease-in-out;
 }
 
-.show h1,
-.show p {
+.show > h1,
+.show > p {
   opacity: 1;
   transform: translate(0);
 }
 
 a.onSection {
-  color: #2c6fec;
+  color: #fa8e8e;
+  border-bottom: 3px solid #2c6fec;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 200ms ease-in;
+}
+
+.card {
+  perspective: 2000;
+  width: 194px;
+  height: 265px;
+  transition: all 500ms ease-in;
+}
+.card > h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cardContainer {
+  opacity: 0;
+  transition: all 500ms ease-in 500ms;
+}
+.show .cardContainer {
+  opacity: 1;
 }
 @media (max-width: 720px) {
 }

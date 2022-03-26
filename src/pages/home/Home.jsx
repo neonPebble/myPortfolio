@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import useVisibility from './components/useVisibility'
-
+import SkillCard from './components/SkillCard'
 // import Somecomponent from './components/Somecomponent'
 
 export default function Home() {
@@ -26,40 +26,44 @@ export default function Home() {
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, contactRef)
 
   return (
-    <div className="min-h-[100vh]  text-primary-200 ">
-      <div className="bg-[#114e9e] pr-8 pt-2">
-        <nav className=" bg-[#7b38f800]">
-          <ul className="flex justify-end no-underline list-none">
-            <li>
-              <a href="#Myself" className="hover:text-[#b922e7]">
-                Myself
-              </a>
-            </li>
-            <li>
-              <a href="#About" className="hover:text-[#b922e7]">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#Skills" className="hover:text-[#b922e7]">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#Projects" className="hover:text-[#b922e7]">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#Contact" className="hover:text-[#b922e7]">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className=" text-primary-200">
-        <section id="Myself" className="bg-[#114e9e] " ref={myselfRef}>
+    <div className="min-h-[100vh]  text-primary-200 relative ">
+      <div className=" h-[40px] w-full bg-[#114e9e]" />
+      <nav className=" bg-[#00000010] pr-8 pt-2 z-30  backdrop-blur-2xl">
+        <ul className="flex justify-end no-underline list-none">
+          <li>
+            <a href="#Myself" className="hover:text-[#b922e7]">
+              Myself
+            </a>
+          </li>
+          <li>
+            <a href="#About" className="hover:text-[#b922e7]">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#Skills" className="hover:text-[#b922e7]">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#Projects" className="hover:text-[#b922e7]">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#Contact" className="hover:text-[#b922e7]">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="relative z-20 text-primary-200">
+        <section
+          id="Myself"
+          className="bg-[#114e9e] pt-[140px] "
+          ref={myselfRef}
+        >
           <h1>
             Hi I&apos;m <span className="text-[#05fdd4]">Akash Parhi</span>
           </h1>
@@ -72,7 +76,7 @@ export default function Home() {
         </section>
         <div className="spacer layer3" />
         <section className=" bg-[#022949]" id="About" ref={aboutRef}>
-          <h1>Abot Me</h1>
+          <h1>About Me</h1>
           <p>
             Eveniet, cum. Suscipit vitae modi maxime nemo cupiditate corporis
             architecto sit sint, quis nisi illum, reprehenderit, rem ducimus
@@ -82,13 +86,17 @@ export default function Home() {
         </section>
         <div className="spacer layer4" />
         <section className=" bg-[#610a94]" id="Skills" ref={skillsRef}>
-          <h1>My Skills</h1>
+          <h1 id="Skills-header">My Skills</h1>
           <p>
             Maiores assumenda tempora molestiae sapiente ut consequatur ad harum
             explicabo non, minima aspernatur facere a, ipsam at architecto
             nesciunt veritatis odit alias libero, sunt neque reprehenderit
             ratione quaerat repellendus! Explicabo.
           </p>
+          <div className="flex items-center justify-center cardContainer py-[40px] gap-10 flex-wrap py-10">
+            <SkillCard sType="front" /> <SkillCard sType="back" />
+            <SkillCard sType="Tools" />
+          </div>
         </section>
         <div className="spacer layer1" />
         <section className=" bg-[#a10a50] red" id="Projects" ref={projectsRef}>
@@ -102,7 +110,7 @@ export default function Home() {
         </section>
         <div className="spacer layer2" />
         <section className=" bg-[#730761]" id="Contact" ref={contactRef}>
-          <h1>Contact Me</h1>
+          <h1>GET IN TOUCH</h1>
           <p>
             Aliquid numquam harum quo quam culpa illum totam ullam nisi
             consequuntur! Aut animi debitis unde fugiat hic modi, vero numquam

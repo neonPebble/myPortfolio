@@ -7,7 +7,11 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   // don't ever use dark theme
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '5xl': '20px 20px 50px rgba(0, 0, 0, 0.5)'
+      }
+    },
     colors: {
       // standard colors
       transparent: 'transparent',

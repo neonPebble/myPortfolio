@@ -106,7 +106,7 @@ export default function Home() {
         <section className=" bg-[#a10a50] red" id="Projects" ref={projectsRef}>
           <h1 className="pb-5 ">My Projects</h1>
 
-          <div className=" projectCardContainer">
+          <div className=" projectCardContainer cardContainer">
             <ProjectCard />
             <ProjectCard2 />
             <ProjectCard3 />

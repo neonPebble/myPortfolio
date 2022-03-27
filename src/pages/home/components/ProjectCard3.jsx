@@ -38,14 +38,14 @@ export default function ProjectCard3() {
       <div className="flex items-center justify-center gap-2">
         <button
           type="button"
-          className="px-4 py-1 text-center rounded-full"
+          className="px-4 py-1 text-center rounded-full fiveGradBtn"
           onClick={handleCodeClick}
         >
           Code
         </button>
         <button
           type="button"
-          className="px-4 py-1 text-center rounded-full"
+          className="px-4 py-1 text-center rounded-full fiveGradBtn"
           onClick={handleLiveClick}
         >
           Live

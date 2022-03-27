@@ -205,8 +205,6 @@ button.fiveGradBtn:hover {
 .btnAnimate {
   animation: btnClickEffect 500ms ease-in 1;
 }
-@media (max-width: 720px) {
-}
 
 @keyframes btnClickEffect {
   0% {
@@ -219,5 +217,37 @@ button.fiveGradBtn:hover {
 
   100% {
     background-position: 50% 50%;
+  }
+}
+
+@media (max-width: 720px) {
+  nav {
+    height: 40px;
+  }
+
+  .navBarTogl {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 0px 0px;
+    transform: rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .navShowUp ul {
+    transform-origin: 50% 0px 0px;
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+    pointer-events: auto;
+    backdrop-filter: blur(24px); /* need to add backdrop blur filter */
   }
 }

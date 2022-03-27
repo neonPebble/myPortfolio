@@ -29,6 +29,10 @@ export default function Home() {
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.2 }, projectsRef)
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, contactRef)
 
+  function navOpenHandler() {
+    document.querySelector('nav').classList.toggle('navShowUp')
+  }
+
   return (
     <div className="min-h-[100vh]  text-primary-200 relative ">
       <div className=" h-[40px] w-full bg-[#114e9e]" />
@@ -60,6 +64,15 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        <button
+          type="button"
+          className="navBarTogl flex flex-col justify-center items-center h-min w-min p-[3px] absolute right-2 top-[2px] opacity-0 pointer-events-none"
+          onClick={navOpenHandler} // nav bar 40px
+        >
+          <span className="whiteLine w-[30px] h-[4px] rounded-[18px] bg-black my-[3px]" />
+          <span className="whiteLine w-[30px] h-[4px] rounded-[18px] bg-black my-[3px]" />
+          <span className="whiteLine w-[30px] h-[4px] rounded-[18px] bg-black my-[3px]" />
+        </button>
       </nav>
 
       <div className="relative z-20 text-primary-200">

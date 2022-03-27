@@ -3,6 +3,25 @@ import React from 'react'
 import home1 from './project-pics/home1.png'
 
 export default function ProjectCard2() {
+  const codeUrl = ''
+  const liveUrl = ''
+
+  function handleCodeClick(e) {
+    e.target.classList.add('btnAnimate')
+    setTimeout(() => {
+      e.target.classList.remove('btnAnimate')
+      window.open(codeUrl, '_blank')
+    }, 500)
+  }
+
+  function handleLiveClick(e) {
+    e.target.classList.add('btnAnimate')
+    setTimeout(() => {
+      e.target.classList.remove('btnAnimate')
+      window.open(liveUrl, '_blank')
+    }, 500)
+  }
+
   return (
     <div className=" bg-[#ffffff30] p-[20px] rounded-xl seeThroughCard shadow-xl flex flex-col justify-center items-center projectCard">
       <img
@@ -17,10 +36,18 @@ export default function ProjectCard2() {
         A fullstack app to lookup and save animes and notes
       </p>
       <div className="flex items-center justify-center gap-2">
-        <button type="button" className="px-4 py-1 text-center rounded-full">
+        <button
+          type="button"
+          className="px-4 py-1 text-center rounded-full"
+          onClick={handleCodeClick}
+        >
           Code
         </button>
-        <button type="button" className="px-4 py-1 text-center rounded-full">
+        <button
+          type="button"
+          className="px-4 py-1 text-center rounded-full"
+          onClick={handleLiveClick}
+        >
           Live
         </button>
       </div>

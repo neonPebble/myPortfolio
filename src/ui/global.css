@@ -183,22 +183,41 @@ nav {
   transform: scale(1.1);
 }
 .projectCard button {
-  background: linear-gradient(45deg, #f31dfa, #51f081, #32fae9);
+  background: linear-gradient(
+    45deg,
+    #f651fb,
+    #8e69f7,
+    #43f8e9,
+    #51f081,
+    #f17160
+  );
   opacity: 1;
   transition: all 300ms ease-in;
   background-size: 200% 200%;
   color: #000000;
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
 }
 .projectCard button:hover {
   transform: scale(1.1);
+  background-position: 50% 50%;
 }
 .btnAnimate {
-  animation: btnClickEffect 500ms ease-in 1 alternate;
+  animation: btnClickEffect 500ms ease-in 1;
 }
 @media (max-width: 720px) {
 }
 
 @keyframes btnClickEffect {
   0% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 50% 50%;
   }
 }

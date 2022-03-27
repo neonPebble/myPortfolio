@@ -3,7 +3,8 @@ import React from 'react'
 import home1 from './project-pics/home1.png'
 
 export default function ProjectCard() {
-  const codeUrl = ''
+  const codeUrl =
+    'https://github.com/neonPebble/anime-list-and-note-list-with-cookie-authentication'
   const liveUrl = ''
 
   function handleCodeClick(e) {

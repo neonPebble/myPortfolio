@@ -1,10 +1,10 @@
 import React from 'react'
 
-import home1 from './project-pics/home1.png'
+import wikiSearch from './project-pics/wikisearch.png'
 
 export default function ProjectCard3() {
-  const codeUrl = ''
-  const liveUrl = ''
+  const codeUrl = 'https://github.com/neonPebble/wikisearch'
+  const liveUrl = 'https://neonpebble.github.io/wikisearch/'
 
   function handleCodeClick(e) {
     e.target.classList.add('btnAnimate')
@@ -26,15 +26,13 @@ export default function ProjectCard3() {
     <div className=" bg-[#ffffff30] p-[20px] rounded-xl seeThroughCard shadow-xl grid grid-rows-[auto,auto,auto auto] projectCard">
       <img
         alt="Project Name"
-        src={home1}
+        src={wikiSearch}
         className="w-full h-auto rounded-xl"
       />
       <h2 className="text-[#e5e6ae] text-center p-[10px] font-semibold tracking-wider py-2">
-        AnimeList
+        WikiSearch
       </h2>
-      <p className="py-2 text-center">
-        A fullstack app to lookup and save animes and notes
-      </p>
+      <p className="py-2 text-center">An app to search wikipedia</p>
       <div className="flex items-center justify-center gap-2">
         <button
           type="button"

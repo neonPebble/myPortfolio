@@ -1,10 +1,10 @@
 import React from 'react'
 
-import home1 from './project-pics/home1.png'
+import idbNotes from './project-pics/indexeddbnotes.png'
 
 export default function ProjectCard2() {
-  const codeUrl = ''
-  const liveUrl = ''
+  const codeUrl = 'https://github.com/neonPebble/IndexedDBnotes'
+  const liveUrl = 'https://neonpebble.github.io/IndexedDBnotes/'
 
   function handleCodeClick(e) {
     e.target.classList.add('btnAnimate')
@@ -26,14 +26,14 @@ export default function ProjectCard2() {
     <div className=" bg-[#ffffff30] p-[20px] rounded-xl seeThroughCard shadow-xl flex flex-col justify-center items-center projectCard">
       <img
         alt="Project Name"
-        src={home1}
+        src={idbNotes}
         className="w-full h-auto rounded-xl"
       />
       <h2 className="text-[#e5e6ae] text-center p-[10px] font-semibold tracking-wider py-2">
-        AnimeList
+        IndexedDB Notes
       </h2>
       <p className="py-2 text-center">
-        A fullstack app to lookup and save animes and notes
+        An app that stores notes in local indexedDB
       </p>
       <div className="flex items-center justify-center gap-2">
         <button

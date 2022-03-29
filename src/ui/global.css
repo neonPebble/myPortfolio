@@ -255,4 +255,8 @@ button.fiveGradBtn:hover {
 
     /* backdrop blur filter not working here inside mediaquery*/
   }
+
+  .contactInputContainer {
+    flex-direction: column;
+  }
 }

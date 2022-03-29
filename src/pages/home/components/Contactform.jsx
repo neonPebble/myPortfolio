@@ -5,7 +5,8 @@ export default function Contactform() {
   const [nameInput, setNameInput] = useState('')
   const [messageInput, setMessageInput] = useState('')
 
-  const mailapiUrl = '/sendmail'
+  const mailapiUrl =
+    'https://send-grid-contact-me-node-neonpebble.vercel.app/sendmail'
 
   async function sendMail(e) {
     e.target.classList.add('btnAnimate')

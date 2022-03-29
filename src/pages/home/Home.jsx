@@ -37,7 +37,7 @@ export default function Home() {
     <div className="min-h-[100vh]  text-primary-200 relative ">
       <div className=" h-[40px] w-full bg-[#114e9e]" />
       <nav className=" bg-[#00000010] pr-8 pt-2 z-30  backdrop-blur-2xl">
-        <ul className="flex justify-end no-underline list-none">
+        <ul className="flex justify-end no-underline list-none ">
           <li>
             <a href="#Myself" className="hover:text-[#b922e7]">
               Myself

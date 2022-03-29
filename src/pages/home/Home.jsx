@@ -4,6 +4,7 @@ import SkillCard from './components/SkillCard'
 import ProjectCard from './components/ProjectCard'
 import ProjectCard2 from './components/ProjectCard2'
 import ProjectCard3 from './components/ProjectCard3'
+import Contactform from './components/Contactform'
 
 // import Somecomponent from './components/Somecomponent'
 
@@ -134,6 +135,7 @@ export default function Home() {
             provident. Necessitatibus similique quia suscipit distinctio dolor,
             neque quas. Tempore?
           </p>
+          <Contactform />
         </section>
         <div className="spacer layer5" />
       </div>

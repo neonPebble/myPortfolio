@@ -220,6 +220,8 @@ button.fiveGradBtn:hover {
   }
 }
 
+
+
 @media (max-width: 720px) {
   nav {
     height: 40px;
@@ -259,4 +261,21 @@ button.fiveGradBtn:hover {
   .contactInputContainer {
     flex-direction: column;
   }
+}
+
+.formAnimation {
+  opacity: 0;
+}
+
+.show .formAnimation{
+  animation: showform 400ms ease-in 700ms 1 normal forwards;
+}
+
+@keyframes showform {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.contactFormtextarea {
+  resize: none;
 }

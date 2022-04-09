@@ -50,7 +50,7 @@ export default function Contactform() {
     }, 500)
   }
   return (
-    <div className="p-2 w-min">
+    <div className="p-2 w-min formAnimation">
       <div className="flex w-full gap-2 contactInputContainer">
         <input
           type="text"
@@ -69,7 +69,7 @@ export default function Contactform() {
       </div>
       <div>
         <textarea
-          className="message bg-[#5d064f] my-2 w-full tracking-wider"
+          className="message bg-[#5d064f] my-2 w-full tracking-wider contactFormtextarea"
           placeholder="message"
           value={messageInput}
           rows="5"
@@ -89,7 +89,7 @@ export default function Contactform() {
           className="px-4 py-1 text-center rounded-full fiveGradBtn"
           onClick={clearIput}
         >
-          clear
+          Clear
         </button>
       </div>
     </div>

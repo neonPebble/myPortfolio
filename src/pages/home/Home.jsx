@@ -28,7 +28,7 @@ export default function Home() {
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, aboutRef)
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.2 }, skillsRef)
   useVisibility({ root: null, rootMargin: '0px', threshold: 0.2 }, projectsRef)
-  useVisibility({ root: null, rootMargin: '0px', threshold: 0.6 }, contactRef)
+  useVisibility({ root: null, rootMargin: '0px', threshold: 0.4 }, contactRef)
 
   function navOpenHandler() {
     document.querySelector('nav').classList.toggle('navShowUp')

@@ -40,27 +40,27 @@ export default function Home() {
       <nav className=" bg-[#00000010] pr-8 pt-2 z-30  backdrop-blur-2xl">
         <ul className="flex justify-end no-underline list-none ">
           <li>
-            <a href="#Myself" className="hover:text-[#b922e7]">
+            <a href="#Myself" className="hover:text-[#00ffe1]">
               Myself
             </a>
           </li>
           <li>
-            <a href="#About" className="hover:text-[#b922e7]">
+            <a href="#About" className="hover:text-[#00ffe1]">
               About
             </a>
           </li>
           <li>
-            <a href="#Skills" className="hover:text-[#b922e7]">
+            <a href="#Skills" className="hover:text-[#00ffe1]">
               Skills
             </a>
           </li>
           <li>
-            <a href="#Projects" className="hover:text-[#b922e7]">
+            <a href="#Projects" className="hover:text-[#00ffe1]">
               Projects
             </a>
           </li>
           <li>
-            <a href="#Contact" className="hover:text-[#b922e7]">
+            <a href="#Contact" className="hover:text-[#00ffe1]">
               Contact
             </a>
           </li>

@@ -8,6 +8,7 @@ import ProjectCard3 from './components/ProjectCard3'
 import Contactform from './components/Contactform'
 import Scrolltogradbutton from './components/Scrolltogradbutton'
 // import Somecomponent from './components/Somecomponent'
+import resume from './components/pdfs/resume.pdf'
 
 export default function Home() {
   // const [someInput, setSomeInput] = useState('')
@@ -33,6 +34,11 @@ export default function Home() {
 
   function navOpenHandler() {
     document.querySelector('nav').classList.toggle('navShowUp')
+  }
+
+  async function handleFileOpening() {
+    const targetFile = resume
+    window.open(targetFile, '_blank')
   }
 
   return (
@@ -104,12 +110,13 @@ export default function Home() {
             <br />
             I have a passion for creating beautiful feature rich websites.
             <br />
-            I have some Back-End skills and am interested in learning more.
+            I have some Back-End skills and I am interested in learning more.
             <br />
             <div className="flex flex-col justify-center items-center">
               <button
                 className=" bg-gradient-to-r from-[#ff00c3] via-[#bc02ff] to-[#2432f3] px-4 py-2 my-5 rounded-md resumeBtn"
                 type="button"
+                onClick={handleFileOpening}
               >
                 Resume
               </button>
@@ -142,10 +149,13 @@ export default function Home() {
         <section className=" bg-[#730761]" id="Contact" ref={contactRef}>
           <h1>GET IN TOUCH</h1>
           <p>
-            Aliquid numquam harum quo quam culpa illum totam ullam nisi
-            consequuntur! Aut animi debitis unde fugiat hic modi, vero numquam
-            provident. Necessitatibus similique quia suscipit distinctio dolor,
-            neque quas. Tempore?
+            <span className=" text-[16px] tracking-wider">
+              Email: akashparhi0@gmail.com
+            </span>
+            <br />
+            <span className=" text-[16px]  tracking-wider">
+              Phone: +91 6372646334
+            </span>
           </p>
           <Contactform />
         </section>

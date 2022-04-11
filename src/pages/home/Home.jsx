@@ -100,20 +100,28 @@ export default function Home() {
         <section className=" bg-[#022949]" id="About" ref={aboutRef}>
           <h1>About Me</h1>
           <p>
-            Eveniet, cum. Suscipit vitae modi maxime nemo cupiditate corporis
-            architecto sit sint, quis nisi illum, reprehenderit, rem ducimus
-            accusamus eaque quae. Commodi accusantium illum cum numquam ducimus
-            facilis, culpa nostrum!
+            Hello, I&apos;m Akash Kumar Parhi. I&apos;m a Front-End Developer.
+            <br />
+            I have a passion for creating beautiful feature rich websites.
+            <br />
+            I have some Back-End skills and am interested in learning more.
+            <br />
+            <div className="flex flex-col justify-center items-center">
+              <button
+                className=" bg-gradient-to-r from-[#ff00c3] via-[#bc02ff] to-[#2432f3] px-4 py-2 my-5 rounded-md resumeBtn"
+                type="button"
+              >
+                Resume
+              </button>
+            </div>
           </p>
         </section>
         <div className="spacer layer4" />
         <section className=" bg-[#610a94]" id="Skills" ref={skillsRef}>
           <h1 id="Skills-header">My Skills</h1>
           <p>
-            Maiores assumenda tempora molestiae sapiente ut consequatur ad harum
-            explicabo non, minima aspernatur facere a, ipsam at architecto
-            nesciunt veritatis odit alias libero, sunt neque reprehenderit
-            ratione quaerat repellendus! Explicabo.
+            I am passionate about learning new skills and always improving
+            existing skills
           </p>
           <div className="flex items-center justify-center cardContainer py-[40px] gap-10 flex-wrap">
             <SkillCard sType="front" /> <SkillCard sType="back" />

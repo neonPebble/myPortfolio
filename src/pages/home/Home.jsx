@@ -1,11 +1,12 @@
 import React, { useRef } from 'react'
+// import Scrolltogradbutton from '../../components/Somecomponent'
 import useVisibility from './components/useVisibility'
 import SkillCard from './components/SkillCard'
 import ProjectCard from './components/ProjectCard'
 import ProjectCard2 from './components/ProjectCard2'
 import ProjectCard3 from './components/ProjectCard3'
 import Contactform from './components/Contactform'
-
+import Scrolltogradbutton from './components/Scrolltogradbutton'
 // import Somecomponent from './components/Somecomponent'
 
 export default function Home() {
@@ -85,11 +86,14 @@ export default function Home() {
           <h1>
             Hi I&apos;m <span className="text-[#05fdd4]">Akash Parhi</span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-            totam, necessitatibus nobis quasi a qui aut quaerat illo corporis,
-            dignissimos ea vel delectus ipsum dolorem quisquam doloremque
-            similique fuga expedita?
+          <p className=" flex flex-col justify-center items-center ">
+            Front end developer
+            <br />
+            <Scrolltogradbutton
+              scrollRef={contactRef}
+              buttonText="Contact Me"
+              scrollPosition="start"
+            />
           </p>
         </section>
         <div className="spacer layer3" />

@@ -93,8 +93,8 @@ export default function Home() {
             Hi I&apos;m <span className="text-[#05fdd4]">Akash Parhi</span>
           </h1>
           <p className=" flex flex-col justify-center items-center ">
-            Front end developer
             <br />
+            Front end developer
             <br />
             <br />
             <Scrolltogradbutton

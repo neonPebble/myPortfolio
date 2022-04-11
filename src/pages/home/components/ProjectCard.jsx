@@ -5,7 +5,7 @@ import home1 from './project-pics/home1.png'
 export default function ProjectCard() {
   const codeUrl =
     'https://github.com/neonPebble/anime-list-and-note-list-with-cookie-authentication'
-  const liveUrl = ''
+  const liveUrl = 'https://animelist.neonpebble.co'
 
   function handleCodeClick(e) {
     e.target.classList.add('btnAnimate')

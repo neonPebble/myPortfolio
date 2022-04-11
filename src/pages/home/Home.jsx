@@ -95,6 +95,8 @@ export default function Home() {
           <p className=" flex flex-col justify-center items-center ">
             Front end developer
             <br />
+            <br />
+            <br />
             <Scrolltogradbutton
               scrollRef={contactRef}
               buttonText="Contact Me"

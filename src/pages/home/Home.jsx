@@ -93,15 +93,15 @@ export default function Home() {
             Hi I&apos;m <span className="text-[#05fdd4]">Akash Parhi</span>
           </h1>
           <p className=" flex flex-col justify-center items-center ">
-            <br />
             Front end developer
-            <br />
             <br />
             <Scrolltogradbutton
               scrollRef={contactRef}
               buttonText="Contact Me"
               scrollPosition="start"
             />
+            <br />
+            <br />
           </p>
         </section>
         <div className="spacer layer3" />

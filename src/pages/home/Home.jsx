@@ -104,7 +104,9 @@ export default function Home() {
             <br />
           </p>
         </section>
-        <div className="spacer layer3" />
+        <div className=" bg-gradient-to-b from-[#114e9e] to-[#022949]">
+          <div className="spacer layer3" />
+        </div>
         <section className=" bg-[#022949]" id="About" ref={aboutRef}>
           <h1>About Me</h1>
           <p>

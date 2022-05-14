@@ -7,12 +7,10 @@ import ProjectCard2 from './components/ProjectCard2'
 import ProjectCard3 from './components/ProjectCard3'
 import Contactform from './components/Contactform'
 import Scrolltogradbutton from './components/Scrolltogradbutton'
-// import Somecomponent from './components/Somecomponent'
+
 import resume from './components/pdfs/resume.pdf'
 
 export default function Home() {
-  // const [someInput, setSomeInput] = useState('')
-  // const [someArray, setSomeArray] = useState([])
   const myselfRef = useRef(null)
   const aboutRef = useRef(null)
   const skillsRef = useRef(null)

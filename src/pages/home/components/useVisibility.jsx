@@ -7,7 +7,6 @@ export default function useVisibility(options, targetRef) {
 
   useEffect(() => {
     const target = targetRef.current
-    console.log('ran outer useEffect')
 
     const queryString = `a[href="#${targetRef.current.id}"]`
 
@@ -30,7 +29,7 @@ export default function useVisibility(options, targetRef) {
     if (target) {
       if (!target.classList.contains('show')) {
         const observer = new IntersectionObserver(callBackFunc, optionsM)
-        console.log('setting observer')
+
         observer.observe(target)
       }
     }

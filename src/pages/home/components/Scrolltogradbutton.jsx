@@ -15,8 +15,6 @@ export default function Scrolltogradbutton(props) {
         inline: 'nearest'
       })
     }, 500)
-    // console.log(scrollPosition)
-    // console.log(scrollRef.current)
   }
 
   return (

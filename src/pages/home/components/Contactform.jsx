@@ -19,8 +19,6 @@ export default function Contactform() {
     setTimeout(async () => {
       e.target.classList.remove('btnAnimate')
 
-      console.log('the seyTimeout callback is working')
-
       const resObj = await fetch(mailapiUrl, {
         method: 'POST',
         headers: {
@@ -32,6 +30,7 @@ export default function Contactform() {
 
       const resJson = await resObj.json()
       if (resJson.successful) {
+        // TODO: error and success message handling ui
         console.log('success')
       } else {
         console.log('failed to send')

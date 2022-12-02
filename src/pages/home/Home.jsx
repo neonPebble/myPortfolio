@@ -4,7 +4,8 @@ import useVisibility from './components/useVisibility'
 import SkillCard from './components/SkillCard'
 import ProjectCard from './components/ProjectCard'
 import ProjectCard2 from './components/ProjectCard2'
-import ProjectCard3 from './components/ProjectCard3'
+// import ProjectCard3 from './components/ProjectCard3'
+import ProjectCard4 from './components/Projectcard4'
 import Contactform from './components/Contactform'
 import Scrolltogradbutton from './components/Scrolltogradbutton'
 
@@ -144,7 +145,8 @@ export default function Home() {
           <div className=" projectCardContainer cardContainer">
             <ProjectCard />
             <ProjectCard2 />
-            <ProjectCard3 />
+            <ProjectCard4/>
+            {/* <ProjectCard3 /> */}
           </div>
         </section>
         <div className="spacer layer2" />

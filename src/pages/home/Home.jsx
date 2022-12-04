@@ -144,8 +144,8 @@ export default function Home() {
 
           <div className=" projectCardContainer cardContainer">
             <ProjectCard />
-            <ProjectCard2 />
             <ProjectCard4/>
+            <ProjectCard2 />
             {/* <ProjectCard3 /> */}
           </div>
         </section>

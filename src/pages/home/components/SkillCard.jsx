@@ -46,6 +46,7 @@ export default function SkillCard(props) {
               <li>MongoDB</li>
               <li>Express</li>
               <li>Node</li>
+              <li>Next.js</li>
             </ul>
           </div>
         </Tilt>

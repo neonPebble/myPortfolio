@@ -1,6 +1,6 @@
 import React from 'react'
 
-import schedImg from './project-pics/scheduleimage.png'
+import schedImg from './project-pics/scheduletest.png'
 
 export default function ProjectCard4() {
   const codeUrl =
